@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-// TODO: Create an array of questions for user input
-// const questions = [];
+const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -70,22 +70,34 @@ const readmeGenerator = (readme) => {
         name: "license",
         message: "Would you like to include a license section?",
         choices: [
-          "GNU AGPLv3",
-          "GNU GPLv3",
-          "GNU LGPLv3",
-          "Mozilla Public 2.0",
-          "Apache 2.0",
-          "MIT",
-          "Boost Software 1.0",
-          "The Unlicense",
+          {
+            name: "GNU AGPLv3",
+          },
+          {
+            name: "GNU GPLv3",
+          },
+          {
+            name: "GNU LGPLv3",
+          },
+          {
+            name: "Mozilla Public 2.0",
+          },
+          {
+            name: "Apache 2.0",
+          },
+          {
+            name: "MIT",
+          },
+          {
+            name: "Boost Software 1.0",
+          },
+          {
+            name: "The Unlicense",
+          },
         ],
-        validate: (licenseAnsr) => {
-          if (licenseAnsr.length < 1) {
-            console.log("You must choose at least 1 license");
-            return false;
-          } else if (licenseAnsr.length > 1) {
-            console.log("You can only choose 1 license");
-            return false;
+        validate(answer) {
+          if (answer.length > 1) {
+            return 'You can only choose 1 license';
           }
           return true;
         },
@@ -120,7 +132,7 @@ const readmeGenerator = (readme) => {
     .then((readmeData) => {
       readme.questions.push(readmeData);
       return readme;
-    });
+    })
 };
 
 const userInfo = () => {
@@ -153,11 +165,31 @@ const userInfo = () => {
     },
   ]);
 };
+
+const writeFile = (data) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile("./dist/README.md", data, (err) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      resolve({
+        ok: true,
+        message: "README Created!",
+      });
+    });
+  });
+};
 // Function call to initialize app
 userInfo()
   .then(readmeGenerator)
   .then((readme) => {
-    console.log(readme)
+    console.log(readme);
+    return generateMarkdown(readme);
+  })
+  .then((readme) => {
+    writeFile(readme);
   })
   .catch((err) => {
     console.log(err);
