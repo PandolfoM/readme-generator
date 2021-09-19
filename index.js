@@ -70,30 +70,14 @@ const readmeGenerator = (readme) => {
         name: "license",
         message: "Would you like to include a license section?",
         choices: [
-          {
-            name: "GNU AGPLv3",
-          },
-          {
-            name: "GNU GPLv3",
-          },
-          {
-            name: "GNU LGPLv3",
-          },
-          {
-            name: "Mozilla Public 2.0",
-          },
-          {
-            name: "Apache 2.0",
-          },
-          {
-            name: "MIT",
-          },
-          {
-            name: "Boost Software 1.0",
-          },
-          {
-            name: "The Unlicense",
-          },
+          "GNU AGPLv3",          
+          "GNU GPLv3",          
+          "GNU LGPLv3",          
+          "Mozilla Public 2.0",          
+          "Apache 2.0",          
+          "MIT",          
+          "Boost Software 1.0",          
+          "The Unlicense",
         ],
         validate(answer) {
           if (answer.length > 1) {
@@ -140,7 +124,7 @@ const userInfo = () => {
     {
       type: "input",
       name: "username",
-      message: "What is your GitHub username?",
+      message: "What is your GitHub username? (Required)",
       validate: (userInput) => {
         if (userInput) {
           return true;
@@ -153,7 +137,7 @@ const userInfo = () => {
     {
       type: "input",
       name: "email",
-      message: "What is your email address?",
+      message: "What is your email address? (Required)",
       validate: (emailInput) => {
         if (emailInput) {
           return true;
@@ -185,7 +169,6 @@ const writeFile = (data) => {
 userInfo()
   .then(readmeGenerator)
   .then((readme) => {
-    console.log(readme);
     return generateMarkdown(readme);
   })
   .then((readme) => {
