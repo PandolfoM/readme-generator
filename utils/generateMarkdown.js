@@ -28,21 +28,21 @@ function renderLicenseLink(license) {
   if (!license) {
     return "";
   } else if (license == "GNU AGPLv3") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/agpl-3.0/)`;
+    return `[${license}](https://choosealicense.com/licenses/agpl-3.0/)`;
   } else if (license == "GNU GPLv3") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/gpl-3.0/)`;
+    return `[${license}](https://choosealicense.com/licenses/gpl-3.0/)`;
   } else if (license == "GNU LGPLv3") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/lgpl-3.0/)`;
+    return `[${license}](https://choosealicense.com/licenses/lgpl-3.0/)`;
   } else if (license == "Mozilla Public 2.0") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/mpl-2.0/)`;
+    return `[${license}](https://choosealicense.com/licenses/mpl-2.0/)`;
   } else if (license == "Apache 2.0") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/apache-2.0/)`;
+    return `[${license}](https://choosealicense.com/licenses/apache-2.0/)`;
   } else if (license == "MIT") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/mit/)`;
+    return `[${license}](https://choosealicense.com/licenses/mit/)`;
   } else if (license == "Boost Software 1.0") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/bsl-1.0/)`;
+    return `[${license}](https://choosealicense.com/licenses/bsl-1.0/)`;
   } else if (license == "The Unlicense") {
-    return `## License <a id='license'></a>\n[${license}](https://choosealicense.com/licenses/unlicense/)`;
+    return `[${license}](https://choosealicense.com/licenses/unlicense/)`;
   }
   return license;
 }

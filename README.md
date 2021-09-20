@@ -1,4 +1,4 @@
-# readme-generator
+# README Generator
 Readme Generator is a generator that will create a professional README file based on your input.
 
 ## Table of Contents
@@ -6,7 +6,7 @@ Readme Generator is a generator that will create a professional README file base
 1. [Installation](#install)
 2. [Usage](#use)
 3. [Contribute](#cont)
-4. [Tesing](#test)
+4. [Testing](#test)
 5. [Questions](#questions)
 6. [License](#license)
 
@@ -34,7 +34,7 @@ Current Contributors:
 </a>
 
 ## Testing <a id="test"></a>
-To test the generator, run the program (as shown in [usage](#use)) and enter test values.
+To test the generator, run the program (as shown in [usage](#use)) and enter values in the fields provided.
 
 ## Questions <a id="questions"></a>
 [GitHub](https://github.com/PandolfoM)

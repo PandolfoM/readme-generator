@@ -1,32 +1,44 @@
+# readme-generator
 
-  # asd
-  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-  asd
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Readme Generator is a generator that will create a professional README file based on your input.
 
-  ## Table of Contents
-  1. [Installation](#install)
-  2. [Usage](#usage)
-  3. [Contribute](#contribute)
-  4. [Tesing](#testing)
-  5. [Questions](#questions)
-  6. [License](#license)
+## Table of Contents
 
-  ## Installation <a id="install"></a>
-  asd
+1. [Installation](#install)
+2. [Usage](#usage)
+3. [Contribute](#contribute)
+4. [Tesing](#testing)
+5. [Questions](#questions)
+6. [License](#license)
 
-  ## Usage <a id="usage"></a>
-  asd
+## Installation <a id="install"></a>
 
-  ## Contribute <a id="cont"></a>
-  asd
+Use [npm](https://www.npmjs.com/) to install inquirer
 
-  ## Testing <a id="testing"></a>
-  asd
+```bash
+npm install inquirer
+```
 
-  ## Questions <a id="questions"></a>
-  [GitHub](https://github.com/asd)
-  [Email](asd)
+## Usage <a id="usage"></a>
 
-  ## License <a id='license'></a>
-  ## License <a id='license'></a>
-[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
+```bash
+node index.js
+```
+
+## Contribute <a id="cont"></a>
+
+If you would like to contribute to the Readme Generator please feel free to do so.
+
+## Testing <a id="testing"></a>
+
+To test the generator, run the program (as shown in [usage](#use)) and enter values in the fields provided.
+
+## Questions <a id="questions"></a>
+
+[GitHub](https://github.com/pandolfom)
+[Email](matt@pandolfo.com)
+
+## License <a id='license'></a>
+
+[MIT](https://choosealicense.com/licenses/mit/)
