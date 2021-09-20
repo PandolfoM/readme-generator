@@ -1,6 +1,6 @@
 # README Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br/>
 Readme Generator is a generator that will create a professional README file based on your input.
 
 ## Table of Contents
