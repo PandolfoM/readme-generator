@@ -50,24 +50,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license == '') {
     return "";
-  } else if (license == "GNU AGPLv3") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "GNU GPLv3") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "GNU LGPLv3") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "Mozilla Public 2.0") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "Apache 2.0") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "MIT") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "Boost Software 1.0") {
-    return `## License <a id='license'></a>`;
-  } else if (license == "The Unlicense") {
-    return `## License <a id='license'></a>`;
-  }
-  return license
+  } 
+  return "## License <a id='license'></a>";
 }
 
 function renderLicenseContent(license) {
