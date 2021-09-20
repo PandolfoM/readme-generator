@@ -1,4 +1,6 @@
 # README Generator
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Readme Generator is a generator that will create a professional README file based on your input.
 
 ## Table of Contents
@@ -9,7 +11,6 @@ Readme Generator is a generator that will create a professional README file base
 4. [Testing](#test)
 5. [Questions](#questions)
 6. [License](#license)
-
 
 ## Installation <a id="install"></a>
 
@@ -26,20 +27,25 @@ node index.js
 ```
 
 ## Contribute <a id="cont"></a>
+
 If you would like to contribute to the Readme Generator please feel free to do so.
 
-Current Contributors:
+Current Contributors:<br/>
 <a href="https://github.com/pandolfom/readme-generator/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pandolfom/readme-generator" />
+<img src="https://contrib.rocks/image?repo=pandolfom/readme-generator" />
 </a>
 
 ## Testing <a id="test"></a>
+
 To test the generator, run the program (as shown in [usage](#use)) and enter values in the fields provided.
 
 ## Questions <a id="questions"></a>
-[GitHub](https://github.com/PandolfoM)
-[Email](matt@pandolfo.com)
+
+- [GitHub](https://github.com/PandolfoM)
+- [Email](matt@pandolfo.com)
+
 ## License <a id="license"></a>
+
 MIT License
 
 Copyright (c) 2021 Matthew Pandolfo
