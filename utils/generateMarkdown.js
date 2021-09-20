@@ -86,7 +86,7 @@ function generateMarkdown(data) {
   ## Usage <a id="usage"></a>
   ${header.usage}
 
-  ## Contribute <a id="cont"></a>
+  ## Contribute <a id="contribute"></a>
   ${header.contribution}
 
   ## Testing <a id="testing"></a>
