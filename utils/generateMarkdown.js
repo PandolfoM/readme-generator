@@ -76,7 +76,7 @@ function generateMarkdown(data) {
   1. [Installation](#install)
   2. [Usage](#usage)
   3. [Contribute](#contribute)
-  4. [Tesing](#testing)
+  4. [Testing](#testing)
   5. [Questions](#questions)
   ${renderLicenseContent(header.license)}
 
